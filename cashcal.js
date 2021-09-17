@@ -9,7 +9,6 @@ function clickHandler(){
 const input = inputVal();
 
 
-
 console.log(input.billAmtVal,input.cashGivenVal);
 }
 
@@ -18,4 +17,12 @@ return{
     billAmtVal : parseFloat(billAmt.value),
     cashGivenVal : parseFloat(cashGiven.value),
 };   
+}
+
+function validateInput(input){
+ if(isNaN(input.billAmtVal) || isNaN(input.cashGivenVal))
+ return false;
+ if((input.billAmtVal<=0) ||   (input.cashGivenVal<=0))
+ return false;
+ return true;
 }
