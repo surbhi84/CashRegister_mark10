@@ -2,6 +2,7 @@ var billAmt = document.querySelector("#bill-amount");
 var cashGiven = document.querySelector("#cash-given");
 var calcBtn = document.querySelector(".calc-btn");
 var output = document.querySelector(".output-div");
+var noOfNotes = document.querySelectorAll("#no-of-notes");
 
 calcBtn.addEventListener("click", clickHandler);
 
@@ -28,7 +29,16 @@ function validateInput(input) {
   return true;
 }
 
-function calculate(input) {}
+function calculate(input) {
+  var change = input.cashGivenVal - input.billAmtVal;
+  const notes = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
+  for (i = 0; i < notes.length; i++) {
+    const numNote = Math.trunc(change / notes[i]);
+    change %= notes[i];
+    console.log(numNote, change, notes[i]);
+    noOfNotes[i].innerText = numNote;
+  }
+}
 
 function alert() {
   output.innerText =
