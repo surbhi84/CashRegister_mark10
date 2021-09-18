@@ -8,13 +8,10 @@ calcBtn.addEventListener("click", clickHandler);
 function clickHandler() {
   const input = inputVal();
   if (validateInput(input)) {
-    validateAmt(input);
     calculate(input);
   } else {
     alert();
   }
-
-  console.log(input.billAmtVal, input.cashGivenVal);
 }
 
 function inputVal() {
@@ -27,20 +24,13 @@ function inputVal() {
 function validateInput(input) {
   if (isNaN(input.billAmtVal) || isNaN(input.cashGivenVal)) return false;
   if (input.billAmtVal <= 0 || input.cashGivenVal <= 0) return false;
+  if (input.cashGivenVal < input.billAmtVal) return false;
   return true;
 }
 
-function validateAmt(input) {
-  if (input.cashGivenVal > input.billAmtVal) return true;
-  else {
-    output.innerText = "Cashgiven should be greater than Billamount.";
-  }
-}
-
-function calculate() {
-  console.log("yayy");
-}
+function calculate(input) {}
 
 function alert() {
-  output.innerText = "Enter positive values.";
+  output.innerText =
+    "Error: The values cant be null,negative or zero and the cashgiven should be greater than bill amount";
 }
