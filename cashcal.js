@@ -32,10 +32,11 @@ function validateInput(input) {
 function calculate(input) {
   var change = input.cashGivenVal - input.billAmtVal;
   const notes = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1];
-  for (i = 0; i < notes.length; i++) {
+  for (let i = 0; i < notes.length; i++) {
     const numNote = Math.trunc(change / notes[i]);
     change %= notes[i];
     console.log(numNote, change, notes[i]);
+
     noOfNotes[i].innerText = numNote;
   }
 }

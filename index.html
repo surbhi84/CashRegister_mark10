@@ -8,57 +8,66 @@
     <title>CashCal</title>
   </head>
   <body>
-    <label for="bill-amount">Bill amount:</label>
-    <input
-      type="number"
-      id="bill-amount"
-      class="input-tab"
-      placeholder="Enter bill amount.."
-    />
+    <header>
+      <h1>CashCal</h1>
+    </header>
+    <div class="main">
+      <img src="/media/giphy.gif" />
 
-    <label for="cash-given">Cash given:</label>
-    <input
-      type="number"
-      id="cash-given"
-      class="input-tab"
-      placeholder="Enter cash given.."
-    />
+      <div class="calculator">
+        <label for="bill-amount">Bill amount:</label>
+        <input
+          type="number"
+          id="bill-amount"
+          class="input-tab"
+          placeholder="Enter bill amount"
+        />
 
-    <button class="calc-btn">Calc</button>
+        <label for="cash-given">Cash given:</label>
+        <input
+          type="number"
+          id="cash-given"
+          class="input-tab"
+          placeholder="Enter cash given"
+        />
 
-    <div class="output-div"></div>
+        <button class="calc-btn">Calc</button>
 
-    <table>
-      <caption>
-        Amount to be returned
-      </caption>
-      <tr>
-        <th>No. of notes</th>
-        <td id="no-of-notes"></td>
-        <td id="no-of-notes"></td>
-        <td id="no-of-notes"></td>
-        <td id="no-of-notes"></td>
-        <td id="no-of-notes"></td>
-        <td id="no-of-notes"></td>
-        <td id="no-of-notes"></td>
-        <td id="no-of-notes"></td>
-        <td id="no-of-notes"></td>
-        <td id="no-of-notes"></td>
-      </tr>
-      <tr>
-        <th>Notes</th>
-        <td>2000</td>
-        <td>500</td>
-        <td>200</td>
-        <td>100</td>
-        <td>50</td>
-        <td>20</td>
-        <td>10</td>
-        <td>5</td>
-        <td>2</td>
-        <td>1</td>
-      </tr>
-    </table>
+        <div class="output-div"></div>
+
+        <table>
+          <caption>
+            Amount to be returned:
+          </caption>
+          <tr>
+            <th>No. of notes:</th>
+            <td id="no-of-notes"></td>
+            <td id="no-of-notes"></td>
+            <td id="no-of-notes"></td>
+            <td id="no-of-notes"></td>
+            <td id="no-of-notes"></td>
+            <td id="no-of-notes"></td>
+            <td id="no-of-notes"></td>
+            <td id="no-of-notes"></td>
+            <td id="no-of-notes"></td>
+            <td id="no-of-notes"></td>
+          </tr>
+          <tr>
+            <th>Notes:</th>
+            <td>2000</td>
+            <td>500</td>
+            <td>200</td>
+            <td>100</td>
+            <td>50</td>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>2</td>
+            <td>1</td>
+          </tr>
+        </table>
+      </div>
+    </div>
   </body>
   <script src="cashcal.js" type="text/javascript"></script>
 </html>

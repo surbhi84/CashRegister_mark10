@@ -1,3 +1,22 @@
-body{
-    background-color: aquamarine;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: auto;
+}
+
+header {
+  color: rgb(218, 188, 24);
+  font-size: 3rem;
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+  height: 20vh;
+  background-image: url("/media/1651816.jpg");
+  background-size: cover;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
 }
