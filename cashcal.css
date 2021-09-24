@@ -49,3 +49,37 @@ input {
   border: 1px solid black;
   margin: 0.5rem;
 }
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calc-btn {
+  height: 3rem;
+  width: 6rem;
+  font-size: 1.5rem;
+  margin: 1rem;
+  background-color: rgb(218, 188, 24);
+  border-radius: 8px;
+  border: 1.5px solid black;
+}
+
+table {
+  background-color: blanchedalmond;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: larger;
+  font-weight: bold;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+caption {
+  padding-bottom: 0.5rem;
+}
+
+td {
+  padding: 0.5rem;
+}
