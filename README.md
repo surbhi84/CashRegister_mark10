@@ -5,6 +5,7 @@ It is a web app that calculates the minimum no of notes that amounts to balance 
 * Takes input from the user.
 * Calculates the balance.
 * Makes use of Math.trunc function.
+* Displays the no of notes to user.
 * Consists of gif,images and font style.
 
 ## Technologies
